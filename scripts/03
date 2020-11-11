@@ -1,0 +1,27 @@
+#!bin/bash
+
+echo "выберите действие (1-3):
+1. просмотреть проект
+2. просмотреть профиль
+3. поиск по словарю"
+read f
+
+if [ $f = "1" ]; then
+echo "введите логин: "
+read name
+echo "введите проект: "
+read pr
+open https://projects.intra.42.fr/$pr/$name
+fi
+
+if [ $f = 2 ]; then
+echo "введите логин: "
+read name
+open https://profile.intra.42.fr/users/$name
+fi
+
+if [ $f = 3 ]; then
+echo "введите слово: "
+read word
+open dict://$word
+fi

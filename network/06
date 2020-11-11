@@ -1,0 +1,5 @@
+/etc/resolv.conf - путь
+
+resolver - набор подпрограмм в библиотеке C, 
+которые предоставляют доступ к Internel DNS. 
+resolv.conf - файл с настройками для resolver 

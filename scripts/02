@@ -1,0 +1,9 @@
+#!/bin/bash
+
+f=$( who | cut -d ' ' -f1 | grep -c "^$1$")
+if [ $f = 0 ]; then 
+    echo "user inactive or non-existent"
+    exit 
+fi
+sudo killall -u $1
+sudo userdel -f $1

@@ -1,0 +1,7 @@
+1. sudo vim /etc/hostname
+Удалить старое имя и установить новое.
+
+2. sudo vim /etc/hosts
+Заменить имя на новое
+
+3. sudo reboot
